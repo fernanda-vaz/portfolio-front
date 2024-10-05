@@ -1026,14 +1026,19 @@ footer {
       center !important,
       center !important
     );
+    width: 100% !important;
 
-    img {
-      align-items: center !important;
+    .image-about {
       text-align: center !important;
-    }
+    }    
 
     article {
-      align-items: center !important;
+      @include DisplayFlex(column !important, center !important, center);
+      margin: 0 !important;
+
+      span {
+        text-align: left !important;
+      }
     }
 
     .dotted-circle {
@@ -1080,7 +1085,7 @@ footer {
       center !important,
       center !important
     );
-    width: 80vw;
+    width: 100% !important;
     height: 100% !important;
     gap: 20px;
 
@@ -1092,6 +1097,10 @@ footer {
       }
       p {
         text-align: center;
+      }
+
+      .tags {
+        margin-right: 50px !important;
       }
     }
 
