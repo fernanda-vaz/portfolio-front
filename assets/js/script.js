@@ -46,14 +46,16 @@ VanillaTilt.init(document.querySelector(".js-tilt"), {
 
 VanillaTilt.init(document.querySelectorAll(".js-tilt"));
 
-
 // menu hamburger
 
-document.addEventListener('DOMContentLoaded', function() {
-  const hamburger = document.querySelector('.hamburger');
-  const menu = document.querySelector('.menu');
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const menu = document.querySelector(".menu");
 
-  hamburger.addEventListener('click', function() {
-    menu.classList.toggle('active');
+  hamburger.addEventListener("click", function () {
+    menu.classList.toggle("active");
+    hamburger.onblur = function () {
+      menu.classList.remove("active");
+    };
   });
 });

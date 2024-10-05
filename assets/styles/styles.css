@@ -918,7 +918,10 @@ footer p {
     display: block;
   }
   h1 {
-    font-size: 48px !important;
+    font-size: 2.5rem !important;
+  }
+  #home .image-home {
+    max-width: 23rem;
   }
   #home .container-home {
     display: flex;
@@ -935,7 +938,7 @@ footer p {
     flex-wrap: wrap;
   }
   #home .container-home article h1 {
-    font-size: 52px !important;
+    font-size: 3rem !important;
   }
   #home .container-home article span {
     font-size: 36px;
@@ -994,12 +997,22 @@ footer p {
     height: 48px !important;
     font-size: 16px !important;
   }
+  .tech-dark-triangle,
+  .abstract {
+    display: none;
+  }
+  .block-stacks img {
+    width: 3.7rem;
+  }
   .container-title {
     margin: 20px;
     z-index: 100;
   }
-  .wrap-projects .waves {
-    margin-top: 100px;
+  .waves {
+    display: none;
+  }
+  .stairs {
+    display: none;
   }
   .container-project {
     display: flex;
@@ -1007,7 +1020,7 @@ footer p {
     justify-content: center !important;
     align-items: center !important;
     width: 80vw;
-    height: 90vh !important;
+    height: 100% !important;
     gap: 20px;
   }
   .container-project .project-description h3 {
@@ -1049,5 +1062,6 @@ footer p {
   footer {
     text-align: center;
     height: 15vh;
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=styles.css.map */

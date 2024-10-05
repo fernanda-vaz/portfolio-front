@@ -958,10 +958,14 @@ footer {
   }
 
   h1 {
-    font-size: 48px !important;
+    font-size: 2.5rem !important;
   }
 
   #home {
+    .image-home {
+      max-width: 23rem;
+    }
+
     .container-home {
       @include DisplayFlex(
         column-reverse !important,
@@ -975,7 +979,7 @@ footer {
         flex-wrap: wrap;
 
         h1 {
-          font-size: 52px !important;
+          font-size: 3rem !important;
         }
 
         span {
@@ -1048,15 +1052,26 @@ footer {
     }
   }
 
+  .tech-dark-triangle,
+  .abstract {
+    display: none;
+  }
+
+  .block-stacks img {
+    width: 3.7rem;
+  }
+
   .container-title {
     margin: 20px;
     z-index: 100;
   }
 
-  .wrap-projects {
-    .waves {
-      margin-top: 100px;
-    }
+  .waves {
+    display: none;
+  }
+
+  .stairs {
+    display: none;
   }
 
   .container-project {
@@ -1066,7 +1081,7 @@ footer {
       center !important
     );
     width: 80vw;
-    height: 90vh !important;
+    height: 100% !important;
     gap: 20px;
 
     .project-description {
@@ -1113,5 +1128,6 @@ footer {
   footer {
     text-align: center;
     height: 15vh;
+    font-size: 0.8rem;
   }
 }
