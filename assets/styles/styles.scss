@@ -280,7 +280,7 @@ html {
 header {
   @include DisplayFlex(row, center, center);
   width: 100%;
-  padding: 20px 20%;
+  padding: 0 20%;
   position: fixed;
   z-index: 200;
   gap: 10%;
@@ -509,10 +509,16 @@ header {
         margin-top: 20px;
       }
 
-      button {
-        @extend .btn-component;
-        margin-top: 100px;
-        width: 212px;
+      .about-btn {
+        @include DisplayFlex(row, space-between, center);
+        gap: 10%;
+
+        button {
+          @extend .btn-component;
+          margin-top: 100px;
+          width: 212px;
+          font-size: 18px;
+        }
       }
     }
   }
