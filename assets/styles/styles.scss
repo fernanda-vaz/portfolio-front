@@ -17,6 +17,8 @@
   --blue: #91e0f2;
   --html: rgb(228, 79, 38);
   --html-bg: rgba(228, 79, 38, 0.2);
+  --react: #125f80;
+  --react-bg: #6ad8fe;
   --css: rgb(21, 114, 182);
   --css-bg: rgba(21, 114, 182, 0.2);
   --js: rgb(204, 184, 20);
@@ -68,6 +70,16 @@
 .css {
   background-color: var(--css-bg);
   color: var(--css);
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  width: 115px;
+  text-align: center;
+}
+
+.react {
+  background-color: var(--react-bg);
+  color: (var(--react));
   padding: 8px;
   border: none;
   border-radius: 12px;
@@ -1072,7 +1084,7 @@ footer {
     }
 
     .block-stacks img {
-      width: 3.7rem;
+      max-width: 3.7rem;
     }
 
     .container-title {
