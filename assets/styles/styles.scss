@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   text-decoration: none;
 }
 
@@ -18,11 +18,17 @@
   --html: rgb(228, 79, 38);
   --html-bg: rgba(228, 79, 38, 0.2);
   --react: #125f80;
-  --react-bg: #6ad8fe;
+  --react-bg: #6ad9fe35;
   --css: rgb(21, 114, 182);
   --css-bg: rgba(21, 114, 182, 0.2);
   --js: rgb(204, 184, 20);
   --js-bg: rgba(204, 184, 20, 0.2);
+  --node: #41883d;
+  --node-bg: #6bbf4a35;
+  --styled: #894057;
+  --styled-bg: #f39ce335;
+  --express: #999896;
+  --express-bg: #e6e4e0;
 }
 
 .dark-mode:root {
@@ -35,7 +41,11 @@
   --css: #f6f1f5;
   --css-bg: rgba(16, 51, 77, 0.4);
   --js: #f6f1f5;
-  --js-bg: rgba(204, 184, 20, 0.2);
+  --node: #f6f1f5;
+  --express: #767574;
+  --styled: #f6f1f5;
+  --styled-bg: #89405780;
+  --react: #f6f1f5;
 }
 
 @mixin DisplayFlex($direction, $justify, $align) {
@@ -80,6 +90,37 @@
 .react {
   background-color: var(--react-bg);
   color: (var(--react));
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  width: 115px;
+  text-align: center;
+}
+
+.node {
+  background-color: var(--node-bg);
+  color: var(--node);
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  width: 115px;
+  text-align: center;
+}
+
+.styled {
+  background-color: var(--styled-bg);
+  color: var(--styled);
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  width: 115px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.express {
+  background-color: var(--express-bg);
+  color: var(--express);
   padding: 8px;
   border: none;
   border-radius: 12px;
@@ -220,7 +261,7 @@ a {
   left: 0;
   bottom: 0;
   cursor: pointer;
-  background-image: url("../img/icons/dark-mode-btn.svg");
+  background-image: url('../img/icons/dark-mode-btn.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-color: var(--light-purple);
@@ -228,7 +269,7 @@ a {
 }
 
 .checkbox-wrapper .slider:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 4px;
   left: 4px;
@@ -299,7 +340,7 @@ header {
   background-color: transparent;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -609,6 +650,11 @@ header {
         &:hover {
           transform: scale(1.3);
           opacity: 0.8;
+        }
+
+        img {
+          max-width: 48px;
+          max-height: 48px;
         }
       }
     }
@@ -1051,16 +1097,23 @@ footer {
     }
 
     article {
-      @include DisplayFlex(column !important, center !important, center !important);
+      @include DisplayFlex(
+        column !important,
+        center !important,
+        center !important
+      );
       margin: 0 !important;
 
       span {
         text-align: left !important;
       }
-      
+
       .about-btn {
-        @include DisplayFlex(column !important, center !important, center !important);
-        
+        @include DisplayFlex(
+          column !important,
+          center !important,
+          center !important
+        );
 
         a button {
           margin-top: 100px;
@@ -1071,7 +1124,7 @@ footer {
           height: 48px !important;
           font-size: 16px !important;
         }
-      } 
+      }
 
       .dotted-circle {
         display: none;
@@ -1092,73 +1145,77 @@ footer {
       z-index: 100;
     }
   }
-  
-    .waves {
-      display: none;
+
+  .waves {
+    display: none;
+  }
+
+  .stairs {
+    display: none;
+  }
+
+  .container-project {
+    @include DisplayFlex(
+      column !important,
+      center !important,
+      center !important
+    );
+    width: 100% !important;
+    height: 100% !important;
+    gap: 20px;
+
+    .project-description {
+      h3 {
+        font-size: 28px !important;
+        text-align: center;
+        width: 100%;
+      }
+      p {
+        text-align: center;
+      }
+
+      .tags {
+        margin-right: 50px !important;
+      }
     }
 
-    .stairs {
-      display: none;
-    }
-
-    .container-project {
+    .project-images {
       @include DisplayFlex(
         column !important,
         center !important,
         center !important
       );
-      width: 100% !important;
-      height: 100% !important;
-      gap: 20px;
 
-      .project-description {
-        h3 {
-          font-size: 28px !important;
-          text-align: center;
-          width: 100%;
-        }
-        p {
-          text-align: center;
-        }
-
-        .tags {
-          margin-right: 50px !important;
-        }
+      .container-btn {
+        @include DisplayFlex(
+          column !important,
+          center !important,
+          center !important
+        );
       }
-
-      .project-images {
-        @include DisplayFlex(column !important, center !important, center !important);
-
-        .container-btn {
-          @include DisplayFlex(
-            column !important,
-            center !important,
-            center !important
-          );
-        }
-      }
-    }
-
-    .contact {
-      height: 50vh;
-
-      h2 {
-        text-align: center !important;
-      }
-
-      .container-contact {
-        display: none;
-      }
-
-      .social-media-mobile {
-        @include DisplayFlex(column, center, center);
-        gap: 24px;
-      }
-    }
-
-    footer {
-      text-align: center;
-      height: 15vh;
-      font-size: 0.8rem;
     }
   }
+
+  .contact {
+    height: 50vh;
+
+    h2 {
+      text-align: center !important;
+    }
+
+    .container-contact {
+      display: none;
+    }
+
+    .social-media-mobile {
+      @include DisplayFlex(column, center, center);
+      gap: 24px;
+    }
+  }
+
+  footer {
+    text-align: center;
+    height: 15vh;
+    font-size: 0.8rem;
+  }
+}
