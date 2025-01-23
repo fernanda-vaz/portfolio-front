@@ -27,8 +27,6 @@
   --node-bg: #6bbf4a35;
   --styled: #894057;
   --styled-bg: #f39ce335;
-  --express: #999896;
-  --express-bg: #e6e4e0;
 }
 
 .dark-mode:root {
@@ -42,7 +40,6 @@
   --css-bg: rgba(16, 51, 77, 0.4);
   --js: #f6f1f5;
   --node: #f6f1f5;
-  --express: #767574;
   --styled: #f6f1f5;
   --styled-bg: #89405780;
   --react: #f6f1f5;
@@ -116,16 +113,6 @@
   width: 115px;
   text-align: center;
   font-size: 14px;
-}
-
-.express {
-  background-color: var(--express-bg);
-  color: var(--express);
-  padding: 8px;
-  border: none;
-  border-radius: 12px;
-  width: 115px;
-  text-align: center;
 }
 
 // animations

@@ -1,6 +1,6 @@
-# Portfólio Pessoal
+# Portfólio
 
-Este é meu portfólio pessoal desenvolvido para apresentar minhas habilidades, projetos, e experiências no campo do desenvolvimento web. A aplicação foi projetada com uma interface moderna, navegabilidade fluida e foco na experiência do usuário.
+Este é meu portfólio desenvolvido para apresentar minhas habilidades, projetos, e experiências no campo do desenvolvimento web. A aplicação foi projetada com uma interface moderna, navegabilidade fluida e foco na experiência do usuário.
 
 ## Tecnologias Utilizadas
 
